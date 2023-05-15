@@ -22,9 +22,9 @@ RSpec.describe 'Parsing Uakino website', type: :feature do
 
   it 'logs in successfully' do
     find(:xpath, '//span[contains(text(), "Авторизація")]').click
-    fill_in 'login_name', with: 'example@gmail.com'
-    fill_in 'login_password', with: 'example_password'
-    click_button('Вход')
+    fill_in 'login_name', with: 'goodluckknots@gmail.com'
+    fill_in 'login_password', with: '1qwedsazxcdewsxzaq123'
+    click_button('Ввійти на сайт')
     expect(page).to have_content('Мій кабінет')
   end
 
@@ -34,3 +34,4 @@ RSpec.describe 'Parsing Uakino website', type: :feature do
   end
 
 end
+

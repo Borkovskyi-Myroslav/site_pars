@@ -28,7 +28,7 @@ class MyCapybaraScript
     #find(:xpath, '//input[contains(@id, "login_password")]').set("#{@password}")
     fill_in "login_password", with: "#{@password}"
 
-    click_button("Вход")
+    click_button("Ввійти на сайт")
 
     puts '**************************'
     a_elements = all('a.movie-title')
@@ -46,9 +46,10 @@ class MyCapybaraScript
       file.puts "Number of Pictures on the site: #{img_count}"
     end
           
-    sleep(10)
+    page.driver.browser.quit
   end
 end
 
-script = MyCapybaraScript.new("example@gmail.com", "example_password")
+#script = MyCapybaraScript.new("example@gmail.com", "example_password")
+script = MyCapybaraScript.new("goodluckknots@gmail.com", "1qwedsazxcdewsxzaq123")
 script.run
