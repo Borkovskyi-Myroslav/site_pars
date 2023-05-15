@@ -50,6 +50,5 @@ class MyCapybaraScript
   end
 end
 
-#script = MyCapybaraScript.new("example@gmail.com", "example_password")
-script = MyCapybaraScript.new("goodluckknots@gmail.com", "1qwedsazxcdewsxzaq123")
+script = MyCapybaraScript.new("example@gmail.com", "example_password")
 script.run
