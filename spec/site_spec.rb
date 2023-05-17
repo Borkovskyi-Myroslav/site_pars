@@ -1,15 +1,17 @@
+
+
 require 'rspec'
 require 'capybara'
 require 'capybara/rspec'
 
 Capybara.configure do |config|
   config.default_driver = :selenium
-  config.app_host = 'https://uakino.club/'
+  
 end
 
-RSpec.configure do |config|
-  config.include Capybara::DSL
-end
+
+
+
 
 RSpec.describe 'Parsing Uakino website', type: :feature do
   before(:each) do
