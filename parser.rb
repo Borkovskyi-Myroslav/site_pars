@@ -8,4 +8,6 @@ module Parser
     end
     
      Capybara.default_driver = :selenium
+
+     SITE = 'https://uakino.club/'
 end
