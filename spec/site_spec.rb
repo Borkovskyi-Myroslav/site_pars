@@ -4,6 +4,7 @@ require './scrapper/uakino/uakino_main'
 require './scrapper/uakino/movies_list'
 
 RSpec.describe Scrapper::Uakino::MoviesList, type: :scrapper do
+              #Scrapper::Uakino::MoviesList
   let(:email) { 'goodluckknots@gmail.com' }
   let(:password) { '1qwedsazxcdewsxzaq12' }
   let(:filename) { 'scrapper_test.txt' }
