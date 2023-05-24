@@ -19,7 +19,7 @@ RSpec.describe Uakino::UakinoMain, type: :scrapper do
     @uakino = Uakino::UakinoMain.new("example@gmail.com", "example_password")
   end
 
-  it 'повинен виконати авторизацію' do
+  it 'authorization' do
     @uakino.login
     expect(page).to have_content('Мій кабінет') 
   end
@@ -30,13 +30,13 @@ describe Uakino::MoviesList, type: :scrapper do
     @movies_list = Uakino::MoviesList.new("example@gmail.com", "example_password")
   end
 
-  it 'повинен збирати дані про фільми' do
+  it 'collect data about movies' do
     @movies_list.login
     @movies_list.scrap_data
     expect(@movies_list.instance_variable_get(:@movie_titles)).not_to be_empty 
   end
 
-  it 'повинен записувати дані  файл' do
+  it 'saves into file' do
     @movies_list.login
     @movies_list.scrap_data
     @movies_list.write_to_file
