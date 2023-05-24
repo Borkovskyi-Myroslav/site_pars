@@ -16,7 +16,7 @@ end
 
 RSpec.describe Uakino::UakinoMain, type: :scrapper do
   before(:each) do
-    @uakino = Uakino::UakinoMain.new("goodluckknots@gmail.com", "1qwedsazxcdewsxzaq123")
+    @uakino = Uakino::UakinoMain.new("example@gmail.com", "example_password")
   end
 
   it 'повинен виконати авторизацію' do
@@ -27,7 +27,7 @@ end
 
 describe Uakino::MoviesList, type: :scrapper do
   before(:each) do
-    @movies_list = Uakino::MoviesList.new("goodluckknots@gmail.com", "1qwedsazxcdewsxzaq123")
+    @movies_list = Uakino::MoviesList.new("example@gmail.com", "example_password")
   end
 
   it 'повинен збирати дані про фільми' do
