@@ -1,6 +1,5 @@
 require './scrapper/scrapper_main'
-require './scrapper/uakino/uakino_login'
-require './scrapper/uakino/uakino_list'
+require './scrapper/uakino'
 
 RSpec.configure do |config|
   config.include Capybara::DSL
